@@ -1,0 +1,71 @@
+# ---------------------------------------------------------
+# GENERAL
+# ---------------------------------------------------------
+.vs/
+.vscode/
+*.user
+*.bak
+*.suo
+*.tmp
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------
+# .NET BACKEND (data_query_api_app)
+# ---------------------------------------------------------
+data_query_api_app/bin/
+data_query_api_app/obj/
+
+# Sensitive config
+data_query_api_app/appsettings.json
+data_query_api_app/appsettings.Development.json
+
+# Local database files
+data_query_api_app/Data/*.sqlite
+data_query_api_app/Data/*.db
+
+# ---------------------------------------------------------
+# ANGULAR FRONTEND (frontend / data_query_api_ui)
+# ---------------------------------------------------------
+# NOTE: Your screenshot shows folder name: data_query_api_ui
+# Adjust if your folder name is different.
+
+frontend/node_modules/
+frontend/dist/
+frontend/out/
+frontend/npm-debug.log
+frontend/package-lock.json
+
+# Angular internal cache
+frontend/.angular/
+frontend/.angular/cache/
+
+# If your actual folder is data_query_api_ui (from screenshot)
+frontend/data_query_api_ui/node_modules/
+frontend/data_query_api_ui/dist/
+frontend/data_query_api_ui/.angular/
+
+# ---------------------------------------------------------
+# ENV & SECRETS
+# ---------------------------------------------------------
+*.env
+*.env.local
+*.env.development
+*.env.production
+
+# ---------------------------------------------------------
+# MISC
+# ---------------------------------------------------------
+# npm/yarn/pnpm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Temporary files
+*.tmp
+*.temp
+

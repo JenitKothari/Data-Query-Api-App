@@ -1,0 +1,17 @@
+<div>
+  <h2>Data Api Query</h2>
+
+  <textarea 
+    [(ngModel)]="question" 
+    placeholder="Enter your question here">
+  </textarea>
+
+  <button (click)="generateResponse()">
+    Generate Response
+  </button>
+
+  <div>
+    <strong>Response:</strong>
+    <pre>{{ responseArea }}</pre>
+  </div>
+</div>
